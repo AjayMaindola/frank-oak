@@ -11,7 +11,7 @@ export default {
      extend: {
       backgroundImage: {
         'bannerTop': "url('/images/mainBanner/bannerTop.webp')",
-        'bannerTop': "url('/images/mainBanner/mobileVewsBanner.webp')",
+        'MadeforGood':"url('/images/MadeforGoodLiving/hhhh.jpg')",
         
       },
       fontFamily: {

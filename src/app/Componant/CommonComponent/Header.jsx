@@ -7,7 +7,7 @@ import { LiaShoppingBagSolid } from "react-icons/lia";
 import { LuMenu } from "react-icons/lu";
 import { IoIosHeartEmpty } from "react-icons/io";
 import LoginModal from "@/app/Modal/LoginModal";
-
+import LogoImg from "../../../../public/images/logo.png"
 export default function Header() {
 
 
@@ -17,7 +17,7 @@ export default function Header() {
 
   let [loginModal, setLoginModal] = useState( false);
   return (
-    <div>
+    <>
       {loginModal &&(
         <LoginModal setLoginModal={setLoginModal} loginModal={loginModal}  />
       )}
@@ -77,14 +77,7 @@ export default function Header() {
               </Drawer>
             </div>
             <div>
-              <Image
-                className="dark:invert"
-                src="/images/logo.png"
-                alt="Next.js logo"
-                width={180}
-                height={38}
-                priority
-              />
+               <Image src={LogoImg} width="60px" height="30px" alt="img1"/>
             </div>
           </div>
           <div className=" mr-[10px] lg:mr-[40px] ml-[10px]  lg:ml-[40px] hidden md:block">
@@ -142,6 +135,6 @@ export default function Header() {
           <LiaShoppingBagSolid />
         </div>
       </header>
-    </div>
+    </>
   );
 }
