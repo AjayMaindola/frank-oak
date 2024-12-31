@@ -8,7 +8,12 @@ export default {
     flowbite.content(),
   ],
   theme: {
-    extend: {
+     extend: {
+      backgroundImage: {
+        'bannerTop': "url('/images/mainBanner/bannerTop.webp')",
+        'bannerTop': "url('/images/mainBanner/mobileVewsBanner.webp')",
+        
+      },
       fontFamily: {
         Roboto: ["Roboto", "sans-Sarif"],
         Poppins: ["Poppins", "sans-Sarif"],
