@@ -2,18 +2,18 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { HiMagnifyingGlass, HiOutlineUserCircle } from "react-icons/hi2";
-import { Drawer } from "flowbite-react";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import { LuMenu } from "react-icons/lu";
+import { CiSearch } from "react-icons/ci";
 import { IoIosHeartEmpty } from "react-icons/io";
+import { FaPlus } from "react-icons/fa6";
 import LoginModal from "@/app/Modal/LoginModal";
+import { IoIosClose } from "react-icons/io";
 import LogoImg from "../../../../public/images/logo.png";
 export default function Header() {
-
-
   let [megaMenuShow, setMegaMenuShow] = useState(-1);
-  const [openphMenu, setopenphMenu] = useState(-1);
-  const handleClose = () => setIsOpen(false);
+  let [faqShowHide, setFaqShowHide] = useState(false);
+  const [openOffcanvas, setOpenOffcancas] = useState(false);
 
   let [loginModal, setLoginModal] = useState(false);
   return (
@@ -27,19 +27,67 @@ export default function Header() {
           <div className=" flex items-center  ">
             <div>
               <LuMenu
-                onClick={()=>setopenphMenu(1)}
-                
+                onClick={() => setOpenOffcancas(!openOffcanvas)}
                 className="text-[25px] md:hidden"
               />
-              {openphMenu ==1 &&(
-                  <div className={`w-[75%] bg-red-500 h-[300px] fixed transition-all duration-500  ${openphMenu ? "left-0" : "left-[-75%]"}
-                  
-                  top-0`}>
-                    <h1  onClick={()=>setopenphMenu(-1)} className=" absolute top-[20px] right-5 text-[40px]">x</h1>
+              <div
+                onClick={() => setOpenOffcancas(false)}
+                className={`w-[100%] bg-black opacity-50    fixed top-0 left-0 h-screen ${
+                  openOffcanvas ? "block" : "hidden"
+                } `}
+              >
+                {" "}
+              </div>
+              <div
+                className={`w-[80%] h-screen transition-all duration-500 bg-white fixed top-0 ${
+                  openOffcanvas ? "left-0" : "left-[-80%]"
+                }`}
+              >
+                <div className="border border-red-600 h-[600px]">
+                  <div className="px-[8px] py-[5px] flex items-center justify-between">
+                    <CiSearch className=" text-[20px] " />
+                    <IoIosClose  onClick={() => setOpenOffcancas(false)} className="text-[30px]" />
                   </div>
-                  
-              )}
-             
+                  <div className="w-[100%]">
+                    <div className="bg-[#e7e5e5] overflow-x-scroll  w-[95%] mx-auto">
+                      <ul className=" flex  justify-between text-[12px] gap-0  items-center  w-[100%] ">
+                        <li className="px-[2px] py-[5px] cursor-pointer uppercase bg-[#daff54]">
+                          {" "}
+                          Winter Sale
+                        </li>
+                        <li className="px-[2px] py-[5px] cursor-pointer">
+                          Women
+                        </li>
+                        <li className="px-[2px] py-[5px] cursor-pointer">
+                          Men
+                        </li>
+                        <li className="px-[2px] py-[5px] cursor-pointer">
+                          About Us
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="mt-[10px]">
+                    <div className="flex items-center justify-between px-[8px] relative">
+                      <h1>Women's Winter Sale </h1>
+                      <FaPlus onClick={() => setFaqShowHide(!faqShowHide)} />
+                    </div>
+                    <div
+                      className={`w-[100%] overflow-hidden transition-all duration-500 bg-red-400 absolute ${
+                        faqShowHide ? " h-[20%]" : "h-0"
+                      }`}
+                    >
+                      <ul className="px-[8px]">
+                        <li>Shop All</li>
+                        <li>Jackets</li>
+                        <li>Sweters</li>
+                        <li>Tops</li>
+                        <li>Bottoms</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div>
               <Image src={LogoImg} width="60px" height="30px" alt="img1" />
@@ -97,52 +145,7 @@ export default function Header() {
           <HiMagnifyingGlass />
           <HiOutlineUserCircle onClick={() => setLoginModal(true)} />
           <IoIosHeartEmpty />
-          <LiaShoppingBagSolid onClick={() => setIsOpen(1)} />
-          {/* <Drawer open={isOpen} onClose={handleClose} position="right">
-            <Drawer.Header title="Drawer" />
-            <Drawer.Items>
-              <p className="mb-6 text-sm text-gray-500 dark:text-gray-400">
-                Supercharge your hiring by taking advantage of our&nbsp;
-                <a
-                  href="#"
-                  className="text-cyan-600 underline hover:no-underline dark:text-cyan-500"
-                >
-                  limited-time sale
-                </a>
-                &nbsp;for Flowbite Docs + Job Board. Unlimited access to over
-                190K top-ranked candidates and the #1 design job board.
-              </p>
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <a
-                  href="#"
-                  className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-cyan-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
-                >
-                  Learn more
-                </a>
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-                >
-                  Get access&nbsp;
-                  <svg
-                    className="ms-2 h-3.5 w-3.5 rtl:rotate-180"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </Drawer.Items>
-          </Drawer> */}
+          <LiaShoppingBagSolid />
         </div>
       </header>
     </>
