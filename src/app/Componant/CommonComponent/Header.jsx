@@ -10,6 +10,7 @@ import { FaPlus } from "react-icons/fa6";
 import LoginModal from "@/app/Modal/LoginModal";
 import { IoIosClose } from "react-icons/io";
 import LogoImg from "../../../../public/images/logo.png";
+import FAQ, { FaqItem } from "../FAQ";
 export default function Header() {
   let [megaMenuShow, setMegaMenuShow] = useState(-1);
   let [faqShowHide, setFaqShowHide] = useState(false);
@@ -46,7 +47,10 @@ export default function Header() {
                 <div className="border border-red-600 h-[600px]">
                   <div className="px-[8px] py-[5px] flex items-center justify-between">
                     <CiSearch className=" text-[20px] " />
-                    <IoIosClose  onClick={() => setOpenOffcancas(false)} className="text-[30px]" />
+                    <IoIosClose
+                      onClick={() => setOpenOffcancas(false)}
+                      className="text-[30px]"
+                    />
                   </div>
                   <div className="w-[100%]">
                     <div className="bg-[#e7e5e5] overflow-x-scroll  w-[95%] mx-auto">
@@ -67,25 +71,27 @@ export default function Header() {
                       </ul>
                     </div>
                   </div>
-                  <div className="mt-[10px]">
-                    <div className="flex items-center justify-between px-[8px] relative">
-                      <h1>Women's Winter Sale </h1>
-                      <FaPlus onClick={() => setFaqShowHide(!faqShowHide)} />
-                    </div>
-                    <div
-                      className={`w-[100%] overflow-hidden transition-all duration-500 bg-red-400 absolute ${
-                        faqShowHide ? " h-[20%]" : "h-0"
-                      }`}
-                    >
-                      <ul className="px-[8px]">
-                        <li>Shop All</li>
-                        <li>Jackets</li>
-                        <li>Sweters</li>
-                        <li>Tops</li>
-                        <li>Bottoms</li>
-                      </ul>
-                    </div>
-                  </div>
+                  <FAQ >
+                    <FaqItem title="Womens Collection">
+                    <ul className="px-[8px]">
+                      <li>Shop All</li>
+                      <li>Jackets</li>
+                      <li>Sweters</li>
+                      <li>Tops</li>
+                      <li>Bottoms</li>
+                    </ul>
+                    </FaqItem>
+                    <FaqItem title="Womens Collection">
+                    <ul className="px-[8px]">
+                      <li>Shop All</li>
+                      <li>Jackets</li>
+                      <li>Sweters</li>
+                      <li>Tops</li>
+                      <li>Bottoms</li>
+                    </ul>
+                    </FaqItem>
+                  </FAQ>
+              
                 </div>
               </div>
             </div>
