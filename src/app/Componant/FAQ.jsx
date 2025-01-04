@@ -25,15 +25,15 @@ export const FaqItem = ({faqShowIndex, setFaqShowIndex, index, title, children})
     const faqOpen = faqShowIndex === index
 
   return (
-    <div className="mt-[10px]">
-      <div onClick={() => faqClick(index)}
+    <div className="mt-[10px] px-[10px]  ">
+      <div  onClick={() => faqClick(index)}
       className="flex items-center justify-between px-[8px] relative">
         <h1>{title}</h1>
         {faqOpen ? <FaMinus /> : <FaPlus />}
         
       </div>
       <div
-        className={`w-[100%] overflow-hidden transition-all duration-500 bg-red-400  ${
+        className={`w-[100%] overflow-hidden transition-all duration-500  ${
             faqOpen ? " h-[150px]" : "h-0"
         }`}
       >{children}

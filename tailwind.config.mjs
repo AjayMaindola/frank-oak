@@ -12,6 +12,7 @@ export default {
       backgroundImage: {
         'bannerTop': "url('/images/mainBanner/bannerTop.webp')",
         'MadeforGood':"url('/images/MadeforGoodLiving/hhhh.jpg')",
+        'PHmenue':"url('images/megamenueimg/PHmenue/Menu_tile.jpg')",
         
       },
       fontFamily: {

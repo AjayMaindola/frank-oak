@@ -6,7 +6,7 @@ import { LiaShoppingBagSolid } from "react-icons/lia";
 import { LuMenu } from "react-icons/lu";
 import { CiSearch } from "react-icons/ci";
 import { IoIosHeartEmpty } from "react-icons/io";
-import { FaPlus } from "react-icons/fa6";
+import phmenueimg from"../../../../public/images/megamenueimg/PHmenue/Menu_tile.jpg"
 import LoginModal from "@/app/Modal/LoginModal";
 import { IoIosClose } from "react-icons/io";
 import LogoImg from "../../../../public/images/logo.png";
@@ -40,12 +40,12 @@ export default function Header() {
                 {" "}
               </div>
               <div
-                className={`w-[80%] h-screen transition-all duration-500 bg-white fixed top-0 ${
+                className={`w-[70%] h-screen transition-all duration-500 bg-white fixed top-0 ${
                   openOffcanvas ? "left-0" : "left-[-80%]"
                 }`}
               >
-                <div className="border border-red-600 h-[600px]">
-                  <div className="px-[8px] py-[5px] flex items-center justify-between">
+                <div className="border border-red-600  bg-[#daff54] pb-[40px] ">
+                  <div className="px-[15px] py-[5px] flex items-center justify-between bg-white">
                     <CiSearch className=" text-[20px] " />
                     <IoIosClose
                       onClick={() => setOpenOffcancas(false)}
@@ -53,9 +53,9 @@ export default function Header() {
                     />
                   </div>
                   <div className="w-[100%]">
-                    <div className="bg-[#e7e5e5] overflow-x-scroll  w-[95%] mx-auto">
-                      <ul className=" flex  justify-between text-[12px] gap-0  items-center  w-[100%] ">
-                        <li className="px-[2px] py-[5px] cursor-pointer uppercase bg-[#daff54]">
+                    <div className="bg-[#e7e5e5]  px-[15px]">
+                      <ul className=" flex  justify-between text-[14px]  items-center  w-[100%] ">
+                        <li className=" py-[5px] cursor-pointer uppercase ">
                           {" "}
                           Winter Sale
                         </li>
@@ -71,29 +71,38 @@ export default function Header() {
                       </ul>
                     </div>
                   </div>
-                  <FAQ >
-                    <FaqItem title="Womens Collection">
-                    <ul className="px-[8px]">
-                      <li>Shop All</li>
-                      <li>Jackets</li>
-                      <li>Sweters</li>
-                      <li>Tops</li>
-                      <li>Bottoms</li>
-                    </ul>
+                  <div className="mt-3">
+                  <FAQ>
+                    <FaqItem  title="Womens Collection">
+                      <ul className="px-[8px]">
+                        <li>Shop All</li>
+                        <li>Jackets</li>
+                        <li>Sweters</li>
+                        <li>Tops</li>
+                        <li>Bottoms</li>
+                      </ul>
                     </FaqItem>
                     <FaqItem title="Womens Collection">
-                    <ul className="px-[8px]">
-                      <li>Shop All</li>
-                      <li>Jackets</li>
-                      <li>Sweters</li>
-                      <li>Tops</li>
-                      <li>Bottoms</li>
-                    </ul>
+                      <ul className="px-[8px]">
+                        <li>Shop All</li>
+                        <li>Jackets</li>
+                        <li>Sweters</li>
+                        <li>Tops</li>
+                        <li>Bottoms</li>
+                      </ul>
                     </FaqItem>
                   </FAQ>
-              
+                  </div>
+                  <div className=" max-w-[95%] mx-auto  h-[120px] object-contain mt-4 bg-[url('/images/megamenueimg/PHmenue/Menu_tile.jpg')] bg-center bg-cover">
+                 <h1 className="text-white text-[17px] px-[30px] pt-[80px]">Women's Witer Sale</h1>
+                 </div>
+                 <div className=" max-w-[95%] mx-auto  h-[120px] object-contain mt-4 bg-[url('/images/megamenueimg/PHmenue/Menu-male.jpg')] bg-center bg-cover">
+                 <h1 className="text-white text-[17px] px-[30px] pt-[80px]">Men's Witer Sale</h1>
+                 </div>
                 </div>
+               
               </div>
+             
             </div>
             <div>
               <Image src={LogoImg} width="60px" height="30px" alt="img1" />
