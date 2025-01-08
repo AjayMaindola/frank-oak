@@ -16,8 +16,8 @@ export default function AboutUs() {
             src={About1}
             alt="sale"
           />
-          <h1 className=" absolute bottom-4 left-5 text-white font-Ysabeau text-[22px] capitalize">
-            Winter Accessories
+          <h1 className=" absolute bottom-4 left-1 lg:left-5 text-white font-Ysabeau text-[20px] lg:text-[22px] capitalize">
+            Who We Are
           </h1>
         </div>
         <div className=" mt-5 relative">
@@ -26,8 +26,8 @@ export default function AboutUs() {
             src={About2}
             alt="sale"
           />
-          <h1 className=" absolute bottom-4 left-5 text-white font-Ysabeau text-[22px] capitalize">
-            Winter Accessories
+          <h1 className=" absolute bottom-4 left-2 lg:left-5 text-white font-Ysabeau text-[20px] lg:text-[22px] capitalize">
+            Sustainble Preactice
           </h1>
         </div>
         <div className=" mt-5 relative">
@@ -36,8 +36,8 @@ export default function AboutUs() {
             src={About3}
             alt="sale"
           />
-          <h1 className=" absolute bottom-4 left-5 text-white font-Ysabeau text-[22px] capitalize">
-            Winter Accessories
+          <h1 className=" absolute bottom-4 left-2 lg:left-5 text-white font-Ysabeau text-[20px] lg:text-[22px] capitalize">
+            Desgin Philosophy
           </h1>
         </div>
         <div className=" mt-5 relative">
@@ -46,8 +46,8 @@ export default function AboutUs() {
             src={About4}
             alt="sale"
           />
-          <h1 className=" absolute bottom-4 left-5 text-white font-Ysabeau text-[22px] capitalize">
-            Winter Accessories
+          <h1 className="absolute bottom-4 left-1 lg:left-5 text-white font-Ysabeau text-[20px] lg:text-[22px] capitalize">
+            Febrics
           </h1>
         </div>
         <div className=" mt-5 relative">
@@ -56,8 +56,8 @@ export default function AboutUs() {
             src={About5}
             alt="sale"
           />
-          <h1 className=" absolute bottom-4 left-5 text-white font-Ysabeau text-[22px] capitalize">
-            Winter Accessories
+          <h1 className=" absolute bottom-4 left-1 lg:left-5 text-white font-Ysabeau text-[20px] lg:text-[22px] capitalize">
+           Circuler Denim
           </h1>
         </div>
         <div className=" mt-5 relative">
@@ -66,8 +66,8 @@ export default function AboutUs() {
             src={About6}
             alt="sale"
           />
-          <h1 className=" absolute bottom-4 left-5 text-white font-Ysabeau text-[22px] capitalize">
-            Winter Accessories
+          <h1 className="absolute bottom-4 left-1 lg:left-5 text-white font-Ysabeau text-[20px] lg:text-[22px] capitalize">
+            Partners and Factories
           </h1>
         </div>
       </div>
