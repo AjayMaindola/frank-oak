@@ -13,6 +13,10 @@ import LoginModal from "@/app/Modal/LoginModal";
 import { IoIosClose } from "react-icons/io";
 import LogoImg from "../../../../public/images/logo.png";
 import FAQ, { FaqItem } from "../FAQ";
+import Sale from "./MegaMenuComponent/Sale";
+import WomenSale from "./MegaMenuComponent/WomenSale";
+import MenSale from "./MegaMenuComponent/MenSale";
+import AboutUs from "./MegaMenuComponent/AboutUs";
 // export start function header------------------>
 export default function Header() {
   let [usdStatu, setUsdstatus] = useState(false);
@@ -191,41 +195,49 @@ export default function Header() {
                 <li
                   onMouseEnter={() => setMegaMenuShow(1)}
                   onMouseLeave={() => setMegaMenuShow(-1)}
-                  className="px-[10px] py-[20px]  uppercase cursor-pointer"
+                  className="px-[10px] py-[20px]  uppercase cursor-pointer hover:bg-[#f9f9f9] hover:underline underline-offset-4"
                 >
                   Winter Sale
                   {megaMenuShow == 1 && (
-                    <div className="w-full bg-red-500 h-[300px] absolute left-0 top-[100%]"></div>
+                    <div className="w-full bg-[#f9f9f9] h-[300px] absolute left-0 top-[100%]">
+                    <Sale/>
+                    </div>
                   )}
                 </li>
                 <li
                   onMouseEnter={() => setMegaMenuShow(2)}
                   onMouseLeave={() => setMegaMenuShow(-1)}
-                  className="px-[10px]  py-[20px] cursor-pointer"
+                  className="px-[10px]  py-[20px] cursor-pointer hover:bg-[#f9f9f9] hover:underline underline-offset-4"
                 >
                   Women
                   {megaMenuShow == 2 && (
-                    <div className="w-full bg-green-500 h-[300px] absolute left-0 top-[100%]"></div>
+                    <div className="w-full bg-[#f9f9f9] h-[300px] absolute left-0 top-[100%] ">
+                      <WomenSale/>
+                    </div>
                   )}
                 </li>
                 <li
                   onMouseEnter={() => setMegaMenuShow(3)}
                   onMouseLeave={() => setMegaMenuShow(-1)}
-                  className="px-[10px] py-[20px] cursor-pointer"
+                  className="px-[10px] py-[20px] cursor-pointer hover:bg-[#f9f9f9] hover:underline underline-offset-4"
                 >
                   Men
                   {megaMenuShow == 3 && (
-                    <div className="w-full bg-pink-500 h-[300px] absolute left-0 top-[100%]"></div>
+                    <div className="w-full bg-[#f9f9f9] h-[300px] absolute left-0 top-[100%]">
+                      <MenSale/>
+                    </div>
                   )}
                 </li>
                 <li
                   onMouseEnter={() => setMegaMenuShow(4)}
                   onMouseLeave={() => setMegaMenuShow(-1)}
-                  className="px-[10px] py-[20px] cursor-pointer"
+                  className="px-[10px] py-[20px] cursor-pointer hover:bg-[#f9f9f9] hover:underline underline-offset-4"
                 >
                   About Us
                   {megaMenuShow == 4 && (
-                    <div className="w-full bg-neutral-500 h-[300px] absolute left-0 top-[100%]"></div>
+                    <div className="w-full bg-[#f9f9f9] h-[300px] absolute left-0 top-[100%]">
+                      <AboutUs/>
+                    </div>
                   )}
                 </li>
               </ul>
