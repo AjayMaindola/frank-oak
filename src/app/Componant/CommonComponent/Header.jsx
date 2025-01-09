@@ -17,6 +17,7 @@ import Sale from "./MegaMenuComponent/Sale";
 import WomenSale from "./MegaMenuComponent/WomenSale";
 import MenSale from "./MegaMenuComponent/MenSale";
 import AboutUs from "./MegaMenuComponent/AboutUs";
+import Link from "next/link";
 // export start function header------------------>
 export default function Header() {
   let [usdStatu, setUsdstatus] = useState(false);
@@ -153,40 +154,41 @@ export default function Header() {
                     <h1 className="mr-[5px]">$USD</h1>
                   </div>
                 </div>
-                  <FAQ>
+                <FAQ>
                   <FaqItem title="About-Us">
-                        <ul className="px-[8px]">
-                          <li>Who We Are</li>
-                          <li>Jackets</li>
-                          <li>Sweters</li>
-                          <li>Tops</li>
-                          <li>Bottoms</li>
-                        </ul>
-                      </FaqItem>
-                      <FaqItem title="About-Us">
-                        <ul className="px-[8px]">
-                          <li>Who We Are</li>
-                          <li>Jackets</li>
-                          <li>Sweters</li>
-                          <li>Tops</li>
-                          <li>Bottoms</li>
-                        </ul>
-                      </FaqItem>
-                      <FaqItem title="About-Us">
-                        <ul className="px-[8px]">
-                          <li>Who We Are</li>
-                          <li>Jackets</li>
-                          <li>Sweters</li>
-                          <li>Tops</li>
-                          <li>Bottoms</li>
-                        </ul>
-                      </FaqItem>
-                  </FAQ>
-
+                    <ul className="px-[8px]">
+                      <li>Who We Are</li>
+                      <li>Jackets</li>
+                      <li>Sweters</li>
+                      <li>Tops</li>
+                      <li>Bottoms</li>
+                    </ul>
+                  </FaqItem>
+                  <FaqItem title="About-Us">
+                    <ul className="px-[8px]">
+                      <li>Who We Are</li>
+                      <li>Jackets</li>
+                      <li>Sweters</li>
+                      <li>Tops</li>
+                      <li>Bottoms</li>
+                    </ul>
+                  </FaqItem>
+                  <FaqItem title="About-Us">
+                    <ul className="px-[8px]">
+                      <li>Who We Are</li>
+                      <li>Jackets</li>
+                      <li>Sweters</li>
+                      <li>Tops</li>
+                      <li>Bottoms</li>
+                    </ul>
+                  </FaqItem>
+                </FAQ>
               </div>
             </div>
             <div>
-              <Image src={LogoImg} width="60px" height="30px" alt="img1" />
+              <Link href={"/"}>
+                <Image src={LogoImg} width="60px" height="30px" alt="img1" />
+              </Link>
             </div>
           </div>
           <div className=" mr-[10px] lg:mr-[40px] ml-[10px]  lg:ml-[40px] hidden md:block">
@@ -197,10 +199,10 @@ export default function Header() {
                   onMouseLeave={() => setMegaMenuShow(-1)}
                   className="px-[10px] py-[20px]  uppercase cursor-pointer hover:bg-[#f9f9f9] hover:underline underline-offset-4"
                 >
-                  Winter Sale
+                  <Link href={"/sale"}> <span className="">Winter</span> <span className="text-red-700 capitalize">Sale</span>  </Link>
                   {megaMenuShow == 1 && (
                     <div className="w-full bg-[#f9f9f9] h-[300px] absolute left-0 top-[100%]">
-                    <Sale/>
+                      <Sale />
                     </div>
                   )}
                 </li>
@@ -209,10 +211,10 @@ export default function Header() {
                   onMouseLeave={() => setMegaMenuShow(-1)}
                   className="px-[10px]  py-[20px] cursor-pointer hover:bg-[#f9f9f9] hover:underline underline-offset-4"
                 >
-                  Women
+                  <Link href={"/women"}>Women</Link>
                   {megaMenuShow == 2 && (
                     <div className="w-full bg-[#f9f9f9] h-[300px] absolute left-0 top-[100%] ">
-                      <WomenSale/>
+                      <WomenSale />
                     </div>
                   )}
                 </li>
@@ -221,10 +223,10 @@ export default function Header() {
                   onMouseLeave={() => setMegaMenuShow(-1)}
                   className="px-[10px] py-[20px] cursor-pointer hover:bg-[#f9f9f9] hover:underline underline-offset-4"
                 >
-                  Men
+                  <Link href={"/men"}>Men</Link>
                   {megaMenuShow == 3 && (
                     <div className="w-full bg-[#f9f9f9] h-[300px] absolute left-0 top-[100%]">
-                      <MenSale/>
+                      <MenSale />
                     </div>
                   )}
                 </li>
@@ -233,10 +235,10 @@ export default function Header() {
                   onMouseLeave={() => setMegaMenuShow(-1)}
                   className="px-[10px] py-[20px] cursor-pointer hover:bg-[#f9f9f9] hover:underline underline-offset-4"
                 >
-                  About Us
+                  <Link href={"/about-us"}>About Us</Link>
                   {megaMenuShow == 4 && (
                     <div className="w-full bg-[#f9f9f9] h-[300px] absolute left-0 top-[100%]">
-                      <AboutUs/>
+                      <AboutUs />
                     </div>
                   )}
                 </li>
