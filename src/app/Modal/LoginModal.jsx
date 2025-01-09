@@ -15,7 +15,7 @@ export default function LoginModal({ setLoginModal }) {
      <LoginTopPat  setLoginModal={setLoginModal} />
 
       {/* sign up part start */}
-      <SignupModal setLoginModal={setLoginModal} />
+      {/* <SignupModal setLoginModal={setLoginModal} /> */}
     </>
   );
 }
