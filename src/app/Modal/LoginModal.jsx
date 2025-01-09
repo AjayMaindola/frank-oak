@@ -22,11 +22,11 @@ export default function LoginModal({ setLoginModal }) {
       />
       {/* login part */}
       {/* <LoginTopPat  setLoginModal={setLoginModal} /> */}
-      <div className="overflow-y-scroll rounded-t-xl md:rounded-none  mt-5 w-[100%] left-0  md:w-[600px] h-screen  bg-[#f9f9f9] fixed pb-5 md:left-[50%] top-0 md:top-[48%]   md:translate-x-[-50%] md:translate-y-[-50%] shadow-2xl z-50">
+      <div className="overflow-y-scroll rounded-t-xl md:rounded-none  mt-0 w-[100%] left-0  md:w-[600px] h-screen  bg-[#f9f9f9] fixed pb-5 md:left-[50%] top-0 md:top-[48%]   md:translate-x-[-50%] md:translate-y-[-50%] shadow-2xl z-50">
         <div className="bg-[#f9f9f9]">
           <IoCloseSharp
             onClick={() => setLoginModal(false)}
-            className=" absolute top-3 right-4 text-[30px]"
+            className=" absolute top-5 right-4 text-[30px]"
           />
           <div className="text-center  mt-8">
             <h1 className=" text-[22px] md:text-[26px] font-Sedan font-semibold">
