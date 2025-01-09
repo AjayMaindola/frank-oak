@@ -154,9 +154,9 @@ export default function SignupModal({setLoginModal}) {
              
             </div>
           </div>
-          <div className=" border py-3 mt-1">
+          <div className="  py-3 mt-1">
           <input id="link-checkbox" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-          <label for="link-checkbox" className=" border w-full ms-2 text-[13px] font-medium text-gray-900 dark:text-gray-300 ">
+          <label for="link-checkbox" className="  ms-2 text-[13px] font-medium text-gray-900 dark:text-gray-300 ">
           Yes, sign me up to the Frank And Oak newsletter to never miss out on product launches and exclusive promotions..</label>
           </div>
           <button className="bg-black text-white w-full mt-4 py-4 text-xl">
