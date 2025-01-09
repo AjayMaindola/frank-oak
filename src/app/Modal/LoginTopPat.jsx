@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AiOutlineGoogle } from "react-icons/ai";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
@@ -10,9 +10,10 @@ import img3 from "../../../public/images/Modal/modal3.svg";
 import Image from "next/image";
 
 export default function LoginTopPat({setLoginModal}) {
+   
   return (
     <>
-    <div className=" overflow-y-scroll rounded-t-xl md:rounded-none mt-0   w-[100%] left-0  md:w-[600px] h-screen  bg-[#f9f9f9] fixed  md:left-[50%] top-0    md:translate-x-[-50%] md:translate-y-[-50%] shadow-2xl z-50">
+    <div className="overflow-y-scroll rounded-t-xl md:rounded-none  mt-0 w-[100%] left-0  md:w-[600px] h-screen  bg-[#f9f9f9] fixed pb-5 md:left-[50%] top-0 md:top-[48%]   md:translate-x-[-50%] md:translate-y-[-50%] shadow-2xl z-50">
         <div className="bg-[#f9f9f9]">
           <IoCloseSharp
             onClick={() => setLoginModal(false)}
@@ -164,7 +165,7 @@ export default function LoginTopPat({setLoginModal}) {
               <div className=" border-b-2"></div>
             </div>
             <div className=" flex justify-center py-5 gap-1 mb-[60px] md:mb-[40px]">
-            <h1 className=" flex items-center gap-2">Don't Have an Account? <span className="flex items-center gap-1 underline">Sign up <IoIosArrowRoundForward className="text-[25px] underline" />  </span></h1>
+            <h1 className=" flex items-center gap-2">Don't Have an Account? <span  className="flex items-center gap-1 underline">Sign up <IoIosArrowRoundForward className="text-[25px] underline" />  </span></h1>
             </div>
             
       </div>
