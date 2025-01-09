@@ -22,7 +22,7 @@ export default function LoginModal({ setLoginModal }) {
       />
       {/* login part */}
       {/* <LoginTopPat  setLoginModal={setLoginModal} /> */}
-      <div className="overflow-y-scroll rounded-t-xl md:rounded-none  mt-0 w-[100%] left-0  md:w-[600px] h-screen  bg-[#f9f9f9] fixed pb-5 md:left-[50%] top-0 md:top-[48%]   md:translate-x-[-50%] md:translate-y-[-50%] shadow-2xl z-50">
+      <div className="overflow-y-scroll rounded-t-xl md:rounded-none  mt-[15px] w-[100%] left-0  md:w-[600px] h-screen  bg-[#f9f9f9] fixed pb-5 md:left-[50%] top-0 md:top-[48%]   md:translate-x-[-50%] md:translate-y-[-50%] shadow-2xl z-50">
         <div className="bg-[#f9f9f9]">
           <IoCloseSharp
             onClick={() => setLoginModal(false)}
@@ -159,13 +159,13 @@ export default function LoginModal({ setLoginModal }) {
                </form> */}
         </div>
         <div className="md:grid md:grid-cols-[48%_48%] items-center justify-between  bg-[#f9f9f9] px-[6%]">
-          <div className="border-2 border-black  flex items-center gap-6 py-3 px-[15px] mb-3 md:mb-0">
+          <div className="border-2 border-black  flex items-center  gap-10 py-3 pl-[10px] mb-3 md:mb-0">
             <ImFacebook className="text-[18px]" />
             <h1 className="text-[14px]">Sign In With FaceBook</h1>
           </div>
-          <div className="border-2 border-black  flex items-center gap-6 py-3 px-[15px]">
+          <div className="border-2 border-black  flex items-center gap-10 py-3 pl-[10px]">
             <AiOutlineGoogle className="text-[18px]" />
-            <h1 className="text-[14px]">Sign In With FaceBook</h1>
+            <h1 className="text-[14px]">Sign In With Google</h1>
           </div>
         </div>
         <div className="grid grid-cols-[37.5%_25%_37.5%] items-center justify-center mt-6 md:mt-10 px-[6%] mb-2">
@@ -178,7 +178,7 @@ export default function LoginModal({ setLoginModal }) {
             Don't Have an Account?{" "}
             <span
               onClick={() => setShowSignUp(true)}
-              className=" cursor-pointer flex items-center gap-1 underline"
+              className=" cursor-pointer flex items-center gap-1 underline duration-500 transition-all"
             >
               Sign up{" "}
               <IoIosArrowRoundForward
@@ -193,11 +193,11 @@ export default function LoginModal({ setLoginModal }) {
       {/* sign up part start */}
       {/* <SignupModal setLoginModal={setLoginModal}  /> */}
       <div className={`  ${showSignUp ? "" : "hidden"}`}>
-        <div className=" overflow-y-scroll rounded-t-xl md:rounded-none  mt-0 w-[100%] left-0  md:w-[600px] h-screen  bg-[#f9f9f9] fixed pb-5 md:left-[50%] top-0 md:top-[48%]   md:translate-x-[-50%] md:translate-y-[-50%] shadow-2xl z-50">
-          <div className="bg-[#f9f9f9] mb-[25px] ">
+        <div className=" overflow-y-scroll rounded-t-xl md:rounded-none  mt-[15px] w-[100%] left-0  md:w-[600px]  bg-[#f9f9f9] fixed pb-5 md:left-[50%] top-0 md:top-[48%]   md:translate-x-[-50%] md:translate-y-[-50%] shadow-2xl z-50 h-[100vh]">
+          <div className="bg-[#f9f9f9]  mb-[25px] ">
             <IoCloseSharp
               onClick={() => setLoginModal(false)}
-              className=" absolute top-3 right-4 text-[30px]"
+              className=" absolute top-6 right-4 text-[30px]"
             />
             <div className="text-center  mt-8">
               <h1 className=" text-[22px] md:text-[26px] font-Sedan font-semibold">
@@ -385,7 +385,7 @@ export default function LoginModal({ setLoginModal }) {
             </div>
             <div className="border-2 border-black  flex items-center gap-6 py-3 px-[15px]">
               <AiOutlineGoogle className="text-[18px]" />
-              <h1 className="text-[14px]">Sign In With FaceBook</h1>
+              <h1 className="text-[14px]">Sign In With Google</h1>
             </div>
           </div>
           <div className="px-[6%] mb-[50px]">
