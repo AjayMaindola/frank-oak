@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { BsArrowLeft } from "react-icons/bs";
 import { HiMagnifyingGlass, HiOutlineUserCircle } from "react-icons/hi2";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import { LuMenu } from "react-icons/lu";
@@ -25,6 +26,7 @@ export default function Header() {
   let [faqShowHide, setFaqShowHide] = useState(false);
   const [openOffcanvas, setOpenOffcancas] = useState(false);
   let [loginModal, setLoginModal] = useState(false);
+  let [drawerOpen,setDrawerOpen] = useState(false)
   return (
     <>
       {loginModal && (
@@ -119,8 +121,8 @@ export default function Header() {
                     <Image
                       className="mr-[5px]"
                       src={phmenueimg}
-                      width="60px"
-                      height="30px"
+                      width={25}
+                      height={25}
                       alt="img1"
                     />
                     <h1 className="mr-[5px]">$USD</h1>
@@ -137,8 +139,8 @@ export default function Header() {
                     <Image
                       className="mr-[5px]"
                       src={cad}
-                      width="60px"
-                      height="30px"
+                      width={25}
+                      height={25}
                       alt="img1"
                     />
                     <h1 className="mr-[5px]">$CAD</h1>
@@ -199,7 +201,11 @@ export default function Header() {
                   onMouseLeave={() => setMegaMenuShow(-1)}
                   className="px-[10px] py-[20px]  uppercase cursor-pointer hover:bg-[#f9f9f9] hover:underline underline-offset-4"
                 >
-                  <Link href={"/sale"}> <span className="">Winter</span> <span className="text-red-700 capitalize">Sale</span>  </Link>
+                  <Link href={"/sale"}>
+                    {" "}
+                    <span className="">Winter</span>{" "}
+                    <span className="text-red-700 capitalize">Sale</span>{" "}
+                  </Link>
                   {megaMenuShow == 1 && (
                     <div className="w-full bg-[#f9f9f9] h-[300px] absolute left-0 top-[100%]">
                       <Sale />
@@ -249,10 +255,25 @@ export default function Header() {
         {/* icons part */}
         <div className="flex items-center justify-end pr-2 lg:pr-8 text-[20px] lg:text-[25px] gap-3 md:gap-3 lg:gap-6 ">
           <HiMagnifyingGlass />
-          <HiOutlineUserCircle onClick={() => setLoginModal(true)} />
-          <IoIosHeartEmpty />
-          <LiaShoppingBagSolid />
+          <HiOutlineUserCircle
+            onClick={() => setLoginModal(true)}
+            className=" cursor-pointer"
+          />
+          <IoIosHeartEmpty
+            onClick={() => setLoginModal(true)}
+            className=" cursor-pointer"
+          />
+
+          <LiaShoppingBagSolid onClick={()=>setDrawerOpen(true)} />
+            
+          <div  onClick={()=>setDrawerOpen(false)} className={` duration-500 transition-all border bg-white py-[1.2%] px-[2.5%] h-screen w-[100%] md:w-[54%] xl:w-[40%] fixed right-0 top-0 ${drawerOpen ? "" : "right-[-100%] md:right-[-54%] xl:right-[-40%]"}`}> 
+            <div  className=" bg-white flex items-center gap-5">
+            <BsArrowLeft  />
+            <h1 className="text-[16px]">Countinew Shoping</h1>
+            </div>
+          </div>
         </div>
+    
       </header>
     </>
   );

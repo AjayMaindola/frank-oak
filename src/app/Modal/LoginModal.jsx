@@ -3,15 +3,12 @@ import React, { useState } from "react";
 import Overlay from "../Componant/Overlay";
 import { AiOutlineGoogle } from "react-icons/ai";
 import { IoIosArrowRoundForward } from "react-icons/io";
-
 import { ImFacebook } from "react-icons/im";
 import { IoCloseSharp } from "react-icons/io5";
 import img1 from "../../../public/images/Modal/modal1.svg";
 import img2 from "../../../public/images/Modal/modal2.svg";
 import img3 from "../../../public/images/Modal/modal3.svg";
 import Image from "next/image";
-import SignupModal from "./SignupModal";
-import LoginTopPat from "./LoginTopPat";
 export default function LoginModal({ setLoginModal }) {
   let [showSignUp, setShowSignUp] = useState(false);
   return (
@@ -302,7 +299,7 @@ export default function LoginModal({ setLoginModal }) {
                 </h1>
               </div>
               <div className=" py-2 mt-2">
-                <div class="md:flex items-center gap-5 ">
+                <div className="md:flex items-center gap-5 ">
                   <h1 className="text-[14px]">I shop for</h1>
                   <div className="flex items-center gap-2">
                     <div className="">
@@ -311,11 +308,11 @@ export default function LoginModal({ setLoginModal }) {
                         type="radio"
                         value=""
                         name="default-radio"
-                        class="w-4 h-4  text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        className="w-4 h-4  text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       />
                       <label
-                        for="default-radio-1"
-                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 "
+                        htmlFor="default-radio-1"
+                        className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 "
                       >
                         Men
                       </label>
@@ -326,11 +323,11 @@ export default function LoginModal({ setLoginModal }) {
                         type="radio"
                         value=""
                         name="default-radio"
-                        class="w-4 h-4  text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        className="w-4 h-4  text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       />
                       <label
-                        for="default-radio-1"
-                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 "
+                        htmlFor="default-radio-1"
+                        className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 "
                       >
                         Women
                       </label>
@@ -341,11 +338,11 @@ export default function LoginModal({ setLoginModal }) {
                         type="radio"
                         value=""
                         name="default-radio"
-                        class="w-4 h-4  text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        className="w-4 h-4  text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                       />
                       <label
-                        for="default-radio-1"
-                        class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 "
+                        htmlFor="default-radio-1"
+                        className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 "
                       >
                         All
                       </label>
@@ -361,7 +358,7 @@ export default function LoginModal({ setLoginModal }) {
                   className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
                 <label
-                  for="link-checkbox"
+                  htmlFor="link-checkbox"
                   className="  ms-2 text-[13px] font-medium text-gray-900 dark:text-gray-300 "
                 >
                   Yes, sign me up to the Frank And Oak newsletter to never miss
