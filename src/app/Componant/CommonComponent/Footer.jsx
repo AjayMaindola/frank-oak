@@ -57,9 +57,9 @@ export default function Footer() {
           <h1 className="text-[13px]">On orders over $99.</h1>
         </div>
       </div>
-      <div className="text-white grid md:grid-cols-[26%_15%_12%_16%_30%] lg:grid-cols-[26%_15%_12%_16%_30%] xl:grid-cols-[15%_15%_15%_15%_30%] max-w-[1320px] mx-auto  mt-[80px]  gap-1 xl:gap-8 mr-0 xl:mr-6 px-6  ">
-        <div className=" lg:pl-6  ">
-          <div className=" ">
+      <div className="  text-white md:grid md:grid-cols-[33%_33%_33%] lg:grid lg:grid-cols-[22%_13%_13%_13%_30%] xl:grid-cols-[15%_15%_15%_15%_30%] max-w-[1320px] mx-auto  mt-[80px]  gap-1 lg:gap-6  mr-0 xl:mr-6 px-6  ">
+        <div className=" lg:pl-6  flex flex-col items-center   ">
+          <div className=" flex flex-col ">
           <Image
             className="dark:invert"
             src="/images/Footer/LogoW.svg"
@@ -129,7 +129,7 @@ export default function Footer() {
             />
           </div>
         </div>
-        <div className=" ">
+        <div className="text-center lg:text-start ">
           <h1 className="text-[20px] pb-5">About Us</h1>
           <ul>
             <li className="pb-3 text-[14px] cursor-pointer">Who we are</li>
@@ -144,7 +144,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="">
+        <div className="text-center lg:text-start">
           <h1 className="text-[20px] pb-5">Discover</h1>
           <ul>
             <li className="pb-3 text-[14px] cursor-pointer">Gift Cards</li>
@@ -158,7 +158,7 @@ export default function Footer() {
             <li className="pb-3 text-[14px] cursor-pointer">Our Stores</li>
           </ul>
         </div>
-        <div className="">
+        <div className=" text-center lg:text-start">
           <h1 className="text-[20px] pb-5">Customer Care</h1>
           <ul>
             <li className="pb-3 text-[14px] cursor-pointer">
@@ -182,17 +182,18 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="  ">
-          <h1 className="text-[20px] pb-5">Stay in touch</h1>
-          <p className="text-[13px] w-[80%]">
+        {/* <div></div> */}
+        <div className=" md:px-[15px] text-center lg:text-start ">
+          <h1 className="text-[20px] pb-5 md:text-center lg:text-start">Stay in touch</h1>
+          <p className="text-[13px] text-justify">
             Join our newsletter and stay in the know about new collections,
             outfit inspiration, sales, and more.
           </p>
-          <div className="mt-6 text-white">
+          <div className="mt-6 text-white text-center lg:text-start">
             <input className="w-[80%] bg-[#1f2322] text-white" type="email" placeholder="Email" />
             <input className="w-[80%] bg-[#1f2322] text-white  mt-5" type="email" placeholder="First Name" />
           </div>
-          <div className="flex mt-3">
+          <div className="flex mt-3 ">
             <h1 className="mr-1  ">I shop for</h1>
             <div className="flex items-center gap-2 mr-3">
               <Radio id="united-state" name="countries" value="USA" />
@@ -215,7 +216,7 @@ export default function Footer() {
            
             
           </div>
-          <div className="mt-6 w-[80%] border text-center py-3">
+          <div className="mt-6 border text-center py-3">
            <button>Subscribe</button>
             
           </div>

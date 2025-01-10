@@ -80,7 +80,7 @@ export default function LoginModal({ setLoginModal,setDrawerOpen }) {
           </div>
         </div>
         <div className="bg-white px-[6%] py-8 mt-6 ">
-          <form>
+          {/* <form>
             <input
               className="w-full h-[50px]"
               type="text"
@@ -107,14 +107,14 @@ export default function LoginModal({ setLoginModal,setDrawerOpen }) {
               <div className="text-center text-[14px]"> Social Link</div>
               <div className=" border-b-2"></div>
             </div>
-          </form>
+          </form> */}
           {/* <div className="grid grid-cols-2 items-center justify-between mt-4 bg-[#f9f9f9]">
                    <div>
                    <ImFacebook />
                    <h1>Sign In With FaceBook</h1>
                    </div>
                </div> */}
-          {/* <form className="max-w-md mx-auto">
+          <form className="max-w-md mx-auto">
                  <div className="relative z-0 w-full mb-5 group">
                    <input
                      type="email"
@@ -153,7 +153,7 @@ export default function LoginModal({ setLoginModal,setDrawerOpen }) {
                    <div className="text-center"> Social Link</div>
                    <div className=" border-b-2"></div>
                  </div>
-               </form> */}
+               </form>
         </div>
         <div className="md:grid md:grid-cols-[48%_48%] items-center justify-between  bg-[#f9f9f9] px-[6%]">
           <div className="border-2 border-black  flex items-center  gap-10 py-3 pl-[10px] mb-3 md:mb-0">
