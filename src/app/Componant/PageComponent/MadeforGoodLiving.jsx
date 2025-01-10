@@ -8,7 +8,7 @@ export default function MadeforGoodLiving() {
 
           <div className="mt-[30px] md:pt-[0px] lg:pt-[20px]">
             <h1 className=" text-[30px] font-semibold md:mt-[80px] lg:mt-[50px] md:text-[30px] lg:text-[40px] font-Poppins text-center">Made for Good Living.</h1>
-            <p className=" mt-[30px] text-[18px] px-[30px] md:pt-[30px] md:text-[18px] md:text-justify md:px-[40px]  lg:pt-[50px] font-serif text-justify lg:text-[25px] font-bold lg:px-[100px] md:leading-[35px] lg:leading-[45px] text-[#666666]">
+            <p className=" mt-[30px] text-[18px] px-[30px] md:pt-[30px] md:text-[18px] md:text-justify md:px-[40px]  lg:pt-[50px]  tracking-wide text-justify lg:text-[22px] font-thin lg:px-[100px] md:leading-[35px] lg:leading-[45px] text-[#666666]">
             Born and raised in Montreal, Frank And Oak is dedicated to creating conscious collections that seamlessly fit into your everyday life.
             </p>
             <h1 className="text-[20px] px-[30px] mt-[25px] mb-[30px] md:mb-0 lg:pt-[20px] md:pt-[35px]  lg:px-[100px] md:px-[35px] lg:text-[30px] md:text-[25px] font-bold font-Roboto underline underline-offset-4">Lern More</h1>
