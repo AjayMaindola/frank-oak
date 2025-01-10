@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <>
       {loginModal && (
-        <LoginModal setLoginModal={setLoginModal} loginModal={loginModal} />
+        <LoginModal setLoginModal={setLoginModal} loginModal={loginModal} drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen}  />
       )}
       <header className="w-[100%] bg-white items-center sticky top-0 md:shadow-xl gap-2 md:gap-0  grid grid-cols-[55%_auto] md:grid md:grid-cols-[70%_auto] px-[15px] lg:px-[30px] py-[15] md:py-0  ">
         <div className=" sm:grid sm:grid-cols-[50%_auto] md:grid md:grid-cols-[20%_auto] items-center justify-start   ">
@@ -266,7 +266,7 @@ export default function Header() {
 
           <LiaShoppingBagSolid onClick={()=>setDrawerOpen(true)} />
             
-          <div  onClick={()=>setDrawerOpen(false)} className={` duration-500 transition-all border bg-white py-[1.2%] px-[2.5%] h-screen w-[100%] md:w-[54%] xl:w-[40%] fixed right-0 top-0 ${drawerOpen ? "" : "right-[-100%] md:right-[-54%] xl:right-[-40%]"}`}> 
+          <div  onClick={()=>setDrawerOpen(false)} className={` duration-500 transition-all  shadow-xl bg-white py-[1.2%] px-[2.5%] h-screen w-[100%] md:w-[54%] xl:w-[40%] fixed right-0 top-0 ${drawerOpen ? "" : "right-[-100%] md:right-[-54%] xl:right-[-40%]"}`}> 
             <div  className=" bg-white flex items-center gap-5">
             <BsArrowLeft  />
             <h1 className="text-[16px]">Countinew Shoping</h1>

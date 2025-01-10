@@ -9,7 +9,7 @@ import img1 from "../../../public/images/Modal/modal1.svg";
 import img2 from "../../../public/images/Modal/modal2.svg";
 import img3 from "../../../public/images/Modal/modal3.svg";
 import Image from "next/image";
-export default function LoginModal({ setLoginModal }) {
+export default function LoginModal({ setLoginModal,setDrawerOpen }) {
   let [showSignUp, setShowSignUp] = useState(false);
   return (
     <>
