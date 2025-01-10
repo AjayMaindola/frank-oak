@@ -8,7 +8,7 @@ export default function FeaturedCategorries() {
     <h1 className=" pt-[10px] px-[20px] text-center md:text-start text-[25px] lg:text-[32px]">Featured Categories</h1>
     </div>
        
-        <div className="max-w-[1320px] mx-auto md:grid-cols-2 grid lg:grid-cols-4 mt-5 justify-between gap-3 px-[12px] lg:gap-5">
+        <div className="max-w-[1320px] mx-auto grid-cols-2 grid lg:grid-cols-4 mt-5 justify-between gap-3 px-[12px] lg:gap-5">
           <div className='' >
           <Image
                       className="dark:invert"
