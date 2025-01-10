@@ -49,7 +49,7 @@ export default function Header() {
                 {" "}
               </div>
               <div
-                className={`w-[70%] h-[100%] overflow-y-auto transition-all duration-500 bg-white fixed top-0 ${
+                className={`w-[70%] h-[100vh] overflow-y-auto transition-all duration-500 bg-white fixed top-0 ${
                   openOffcanvas ? "left-0" : "left-[-80%]"
                 }`}
               >
