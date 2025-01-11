@@ -32,7 +32,7 @@ export default function Header() {
       {loginModal && (
         <LoginModal setLoginModal={setLoginModal} loginModal={loginModal} drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen}  />
       )}
-      <header className="z-40 w-[100%] bg-white  items-center sticky top-0 md:shadow-xl gap-2 md:gap-0  grid grid-cols-[55%_auto] md:grid md:grid-cols-[70%_auto] px-[15px] lg:px-[30px] py-[15] md:py-0  ">
+      <header className="z-40 w-[100%] bg-white  items-center sticky top-0 md:shadow-xl gap-2 md:gap-0  grid grid-cols-[55%_auto] md:grid md:grid-cols-[70%_auto] px-[15px] lg:px-[30px] py-[22]  md:py-0  ">
         <div className=" sm:grid sm:grid-cols-[50%_auto] md:grid md:grid-cols-[20%_auto] items-center justify-start   ">
           <div className=" flex items-center  ">
             <div className=" ">
@@ -49,7 +49,7 @@ export default function Header() {
                 {" "}
               </div>
               <div
-                className={`w-[70%] h-[100vh]   mb-8 overflow-y-auto transition-all duration-500 bg-white fixed top-[30px] z-50 mt-5 ${
+                className={`w-[70%] h-[100vh]   mb-8 overflow-y-auto transition-all duration-500 bg-white fixed top-[25px] z-50 mt-4 ${
                   openOffcanvas ? "left-0" : "left-[-80%]"
                 }`}
               >
