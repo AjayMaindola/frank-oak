@@ -42,14 +42,14 @@ export default function Header() {
               />
               <div
                 onClick={() => setOpenOffcancas(false)}
-                className={`w-[100%] bg-black opacity-50 h-[100%] overflow-y-auto z-0   fixed top-[65px] left-0 ${
+                className={`w-[100%] bg-black opacity-50 h-[100%] overflow-y-auto    fixed top-[65px] left-0 ${
                   openOffcanvas ? "block" : "hidden"
                 } `}
               >
                 {" "}
               </div>
               <div
-                className={`w-[70%] h-[100vh]   mb-8 overflow-y-auto transition-all duration-500 bg-white fixed top-[25px] z-50 mt-4 ${
+                className={`w-[70%] h-[100vh]   mb-8 overflow-y-auto transition-all duration-500 bg-white fixed top-[20px]  mt-4 ${
                   openOffcanvas ? "left-0" : "left-[-80%]"
                 }`}
               >
