@@ -47,15 +47,15 @@ export default function Header() {
               />
               <div
                 onClick={() => setOpenOffcancas(false)}
-                className={`w-[100%] bg-white h-[100vh] overflow-y-auto mt-5   fixed top-10 left-0 ${
+                className={`w-[100%] bg-black h-[100%] opacity-50 overflow-y-auto mt-5   fixed top-10 left-0 ${
                   openOffcanvas ? "block" : "hidden"
                 } `}
               >
                 {" "}
               </div>
               <div
-                className={`w-[100%] h-[100vh]   mb-8 overflow-y-auto transition-all duration-500 bg-white fixed top-0 mt-0 ${
-                  openOffcanvas ? "left-0" : "left-[-100%]"
+                className={`w-[70%] h-[100%]   mb-8 overflow-y-auto transition-all duration-500 bg-white fixed top-0 mt-0 ${
+                  openOffcanvas ? "left-0" : "left-[-80%]"
                 }`}
               >
                 <div className="border   bg-white pb-[40px] ">
@@ -274,7 +274,7 @@ export default function Header() {
 
           <div
             onClick={() => setDrawerOpen(false)}
-            className={` duration-500 transition-all  shadow-xl bg-white py-[1.2%] px-[2.5%] h-screen w-[100%] md:w-[54%] xl:w-[40%]  fixed right-0 bottom-0 ${
+            className={` duration-500 transition-all  shadow-xl bg-white py-[1.2%] px-[2.5%] h-[100%] w-[100%] md:w-[54%] xl:w-[40%]  fixed right-0 top-0 ${
               drawerOpen ? "" : "right-[-100%] md:right-[-54%] xl:right-[-40%]"
             }`}
           >
