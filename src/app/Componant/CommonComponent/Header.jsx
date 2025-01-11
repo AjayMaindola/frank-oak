@@ -32,7 +32,7 @@ export default function Header() {
       {loginModal && (
         <LoginModal setLoginModal={setLoginModal} loginModal={loginModal} drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen}  />
       )}
-      <header className="z-40 w-[100%] bg-white  items-center sticky top-0 md:shadow-xl gap-2 md:gap-0  grid grid-cols-[55%_auto] md:grid md:grid-cols-[70%_auto] px-[15px] lg:px-[30px] py-[22]  md:py-0  ">
+      <header className="z-40 w-[100%] bg-white  items-center sticky top-0 md:shadow-xl gap-2 md:gap-0  grid grid-cols-[55%_auto] md:grid md:grid-cols-[70%_auto] px-[15px] lg:px-[30px] py-[24]  md:py-0  ">
         <div className=" sm:grid sm:grid-cols-[50%_auto] md:grid md:grid-cols-[20%_auto] items-center justify-start   ">
           <div className=" flex items-center  ">
             <div className=" ">
