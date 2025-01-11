@@ -7,7 +7,7 @@ import img4 from "../../../../../public/images/bannerMid/bannerM4.svg";
 export default function BannerComponent() {
   return (
     <>
-      <div className="  bg-[url('/images/mainBanner/mobileVewsBanner.webp')] bg-no-repeat bg-cover bg-center sm:bg-cover lg:bg-[url('/images/mainBanner/bannerTop.webp')] md:bg-no-repeat md:bg-cover md:left md:bg-top lg:bg-cover lg:bg-center  ">
+      <div className="  bg-[url('/images/mainBanner/mobileVewsBanner.webp')] bg-no-repeat  g-cover bg-center sm:bg-cover lg:bg-[url('/images/mainBanner/bannerTop.webp')] md:bg-no-repeat md:bg-cover md:left md:bg-top lg:bg-cover lg:bg-center  ">
         <div className=" px-[100px] py-[170px]  ">
           <h1 className=" pb-[15px] md:pb-0  text-center text-[18px] md:text-start md:text-[30px]  lg:text-[35px] font-Ysabeau text-white ">
             WINTER SALE

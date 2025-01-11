@@ -26,11 +26,16 @@ export default function Header() {
   let [faqShowHide, setFaqShowHide] = useState(false);
   const [openOffcanvas, setOpenOffcancas] = useState(false);
   let [loginModal, setLoginModal] = useState(false);
-  let [drawerOpen,setDrawerOpen] = useState(false)
+  let [drawerOpen, setDrawerOpen] = useState(false);
   return (
     <>
       {loginModal && (
-        <LoginModal setLoginModal={setLoginModal} loginModal={loginModal} drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen}  />
+        <LoginModal
+          setLoginModal={setLoginModal}
+          loginModal={loginModal}
+          drawerOpen={drawerOpen}
+          setDrawerOpen={setDrawerOpen}
+        />
       )}
       <header className="z-40 w-[100%] bg-white  items-center sticky top-0 md:shadow-xl gap-2 md:gap-0  grid grid-cols-[55%_auto] md:grid md:grid-cols-[70%_auto] px-[15px] lg:px-[30px] py-[24]  md:py-0  ">
         <div className=" sm:grid sm:grid-cols-[50%_auto] md:grid md:grid-cols-[20%_auto] items-center justify-start   ">
@@ -42,15 +47,15 @@ export default function Header() {
               />
               <div
                 onClick={() => setOpenOffcancas(false)}
-                className={`w-[100%] bg-black opacity-50 h-[100%] overflow-y-auto    fixed top-[65px] left-0 ${
+                className={`w-[100%] bg-white h-[100vh] overflow-y-auto mt-5   fixed top-10 left-0 ${
                   openOffcanvas ? "block" : "hidden"
                 } `}
               >
                 {" "}
               </div>
               <div
-                className={`w-[70%] h-[100vh]   mb-8 overflow-y-auto transition-all duration-500 bg-white fixed top-[20px]  mt-4 ${
-                  openOffcanvas ? "left-0" : "left-[-80%]"
+                className={`w-[100%] h-[100vh]   mb-8 overflow-y-auto transition-all duration-500 bg-white fixed top-0 mt-0 ${
+                  openOffcanvas ? "left-0" : "left-[-100%]"
                 }`}
               >
                 <div className="border   bg-white pb-[40px] ">
@@ -156,7 +161,7 @@ export default function Header() {
                     <h1 className="mr-[5px]">$USD</h1>
                   </div>
                 </div>
-                <FAQ >
+                <FAQ>
                   <FaqItem title="About-Us">
                     <ul className="px-[8px]">
                       <li>Who We Are</li>
@@ -185,9 +190,7 @@ export default function Header() {
                     </ul>
                   </FaqItem>
                 </FAQ>
-                <div className="h-[30px] ">
-
-                </div>
+                <div className="h-[30px] "></div>
               </div>
             </div>
             <div>
@@ -267,16 +270,20 @@ export default function Header() {
             className=" cursor-pointer"
           />
 
-          <LiaShoppingBagSolid onClick={()=>setDrawerOpen(true)} />
-            
-          <div  onClick={()=>setDrawerOpen(false)} className={` duration-500 transition-all  shadow-xl bg-white py-[1.2%] px-[2.5%] h-screen w-[100%] md:w-[54%] xl:w-[40%] fixed right-0 top-0 ${drawerOpen ? "" : "right-[-100%] md:right-[-54%] xl:right-[-40%]"}`}> 
-            <div  className=" bg-white flex items-center gap-5">
-            <BsArrowLeft  />
-            <h1 className="text-[16px]">Countinew Shoping</h1>
+          <LiaShoppingBagSolid onClick={() => setDrawerOpen(true)} />
+
+          <div
+            onClick={() => setDrawerOpen(false)}
+            className={` duration-500 transition-all  shadow-xl bg-white py-[1.2%] px-[2.5%] h-screen w-[100%] md:w-[54%] xl:w-[40%] fixed right-0 top-0 ${
+              drawerOpen ? "" : "right-[-100%] md:right-[-54%] xl:right-[-40%]"
+            }`}
+          >
+            <div className=" bg-white flex items-center gap-5">
+              <BsArrowLeft />
+              <h1 className="text-[16px]">Countinew Shoping</h1>
             </div>
           </div>
         </div>
-    
       </header>
     </>
   );
