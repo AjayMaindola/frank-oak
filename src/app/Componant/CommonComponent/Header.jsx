@@ -35,25 +35,25 @@ export default function Header() {
       <header className="z-40 w-[100%] bg-white  items-center sticky top-0 md:shadow-xl gap-2 md:gap-0  grid grid-cols-[55%_auto] md:grid md:grid-cols-[70%_auto] px-[15px] lg:px-[30px] py-[15] md:py-0  ">
         <div className=" sm:grid sm:grid-cols-[50%_auto] md:grid md:grid-cols-[20%_auto] items-center justify-start   ">
           <div className=" flex items-center  ">
-            <div className="">
+            <div className=" ">
               <LuMenu
                 onClick={() => setOpenOffcancas(!openOffcanvas)}
                 className="text-[25px] md:hidden"
               />
               <div
                 onClick={() => setOpenOffcancas(false)}
-                className={`w-[100%] bg-black opacity-50 h-[100%] overflow-y-auto    fixed top-0 left-0 ${
+                className={`w-[100%] bg-black opacity-50 h-[100%] overflow-y-auto z-0   fixed top-[65px] left-0 ${
                   openOffcanvas ? "block" : "hidden"
                 } `}
               >
                 {" "}
               </div>
               <div
-                className={`w-[70%] h-[100vh] overflow-y-auto transition-all duration-500 bg-white fixed top-0 ${
+                className={`w-[70%] h-[100vh] border  mb-8 overflow-y-auto transition-all duration-500 bg-white fixed top-[40px] z-50 mt-6 ${
                   openOffcanvas ? "left-0" : "left-[-80%]"
                 }`}
               >
-                <div className="border   bg-[#daff54] pb-[40px] ">
+                <div className="border   bg-white pb-[40px] ">
                   <div className="px-[15px] py-[5px] flex items-center justify-between bg-white">
                     <CiSearch className=" text-[20px] " />
                     <IoIosClose
@@ -156,7 +156,7 @@ export default function Header() {
                     <h1 className="mr-[5px]">$USD</h1>
                   </div>
                 </div>
-                <FAQ>
+                <FAQ >
                   <FaqItem title="About-Us">
                     <ul className="px-[8px]">
                       <li>Who We Are</li>
@@ -176,7 +176,7 @@ export default function Header() {
                     </ul>
                   </FaqItem>
                   <FaqItem title="About-Us">
-                    <ul className="px-[8px]">
+                    <ul className="px-[8px] mb-5">
                       <li>Who We Are</li>
                       <li>Jackets</li>
                       <li>Sweters</li>
@@ -185,6 +185,9 @@ export default function Header() {
                     </ul>
                   </FaqItem>
                 </FAQ>
+                <div className="h-[30px] ">
+
+                </div>
               </div>
             </div>
             <div>
