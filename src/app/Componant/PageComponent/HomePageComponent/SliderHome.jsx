@@ -56,7 +56,7 @@ export default function SliderHome() {
               This Just In
             </h1>
           </div>
-          <div className="flex items-center gap-[20px] lg:gap-[70px] " >
+          <div className="flex items-center  gap-5 md:gap-10  " >
             <h1
               onClick={() => UpdateToogle(1)}
               className={`text-lg md:text-xl lg:text-3xl cursor-pointer   ${
@@ -68,28 +68,28 @@ export default function SliderHome() {
             {/* women-Div */}
 
             <div id="mySlider"
-              className={`w-full  bg-slate-180 h-[200px] md:h-[305px] absolute left-0 top-[85px] px-[15px]  `} 
+              className={`w-[93%]   bg-slate-180 h-[200px] md:h-[305px] absolute left-[25px] pl-[0px] md:pl-[35px] top-[85px]   `} 
              
             >
               <Slider {...settings}  >
                 <div className="h-[180px] md:h-[300px] " >
-                    <div className="mr-[10px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={250} height={250} alt="gg"/></div>
+                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={200} height={250} alt="gg"/></div>
                    
                 </div>
                 <div className="h-[300px] " >
-                    <div className="mr-[10px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={250} height={250} alt="gg"/></div>
+                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={200} height={250} alt="gg"/></div>
                    
                 </div>
                 <div className="h-[300px] " >
-                    <div className="mr-[10px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={250} height={250} alt="gg"/></div>
+                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={200} height={250} alt="gg"/></div>
                    
                 </div>
                 <div className="h-[300px] " >
-                    <div className="mr-[10px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={250} height={250} alt="gg"/></div>
+                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={200} height={250} alt="gg"/></div>
                    
                 </div>
                 <div className="h-[300px] " >
-                    <div className="mr-[10px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={250} height={250} alt="gg"/></div>
+                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={200} height={250} alt="gg"/></div>
                    
                 </div>
               
@@ -100,7 +100,7 @@ export default function SliderHome() {
             {/* Men-work */}
             <h1
               onClick={() => UpdateToogle(2)}
-              className={`text-lg md:text-xl lg:text-3xl cursor-pointer  ${
+              className={`text-lg md:text-xl lg:text-3xl cursor-pointer md:mr-3   ${
                 toggle === 2 ? " underline underline-offset-8" : ""
               } `}
             >
