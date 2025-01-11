@@ -37,7 +37,7 @@ export default function Header() {
           setDrawerOpen={setDrawerOpen}
         />
       )}
-      <header className="z-40 w-[100%] bg-white  items-center sticky top-0 md:shadow-xl gap-2 md:gap-0  grid grid-cols-[55%_auto] md:grid md:grid-cols-[70%_auto] px-[15px] lg:px-[30px] py-[24]  md:py-0  ">
+      <header className="z-40 w-[100%] bg-white  items-center sticky top-0 md:shadow-xl gap-2 md:gap-0  grid grid-cols-[55%_auto] md:grid md:grid-cols-[70%_auto] px-[15px] lg:px-[30px] py-[15]  md:py-0  ">
         <div className=" sm:grid sm:grid-cols-[50%_auto] md:grid md:grid-cols-[20%_auto] items-center justify-start   ">
           <div className=" flex items-center  ">
             <div className=" ">
@@ -47,14 +47,14 @@ export default function Header() {
               />
               <div
                 onClick={() => setOpenOffcancas(false)}
-                className={`w-[100%] bg-black h-[100%] opacity-50 overflow-y-auto mt-5   fixed top-10 left-0 ${
+                className={`w-[100%] bg-black h-[100%] opacity-50 overflow-y-auto fixed top-0 left-0 ${
                   openOffcanvas ? "block" : "hidden"
                 } `}
               >
                 {" "}
               </div>
               <div
-                className={`w-[70%] h-[100%]   mb-8 overflow-y-auto transition-all duration-500 bg-white fixed top-0 mt-0 ${
+                className={`w-[70%] h-[100%]    overflow-y-auto transition-all duration-500 bg-white fixed top-0 mt-0 ${
                   openOffcanvas ? "left-0" : "left-[-80%]"
                 }`}
               >
