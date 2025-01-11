@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import img1 from "../../../../public/images/bannerMid/bannerM1.svg";
-import img2 from "../../../../public/images/bannerMid/returns1.png";
-import img3 from "../../../../public/images/bannerMid/bannerM3.png";
-import img4 from "../../../../public/images/bannerMid/bannerM4.svg";
+import img1 from "../../../../../public/images/bannerMid/bannerM1.svg";
+import img2 from "../../../../../public/images/bannerMid/returns1.png";
+import img3 from "../../../../../public/images/bannerMid/bannerM3.png";
+import img4 from "../../../../../public/images/bannerMid/bannerM4.svg";
 export default function BannerComponent() {
   return (
     <>

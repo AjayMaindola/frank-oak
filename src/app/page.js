@@ -1,7 +1,9 @@
 import Image from "next/image";
-import BannerComponent from "./Componant/PageComponent/BannerComponent";
-import MadeforGoodLiving from "./Componant/PageComponent/MadeforGoodLiving";
-import FeaturedCategorries from "./Componant/PageComponent/FeaturedCategorries";
+
+import SliderHome from "./Componant/PageComponent/HomePageComponent/SliderHome";
+import BannerComponent from "./Componant/PageComponent/HomePageComponent/BannerComponent";
+import FeaturedCategorries from "./Componant/PageComponent/HomePageComponent/FeaturedCategorries";
+import MadeforGoodLiving from "./Componant/PageComponent/HomePageComponent/MadeforGoodLiving";
 
 export default function Home() {
   return (
@@ -9,6 +11,7 @@ export default function Home() {
       <div>
           <BannerComponent/>
           <FeaturedCategorries/>
+          <SliderHome/>
           <MadeforGoodLiving/>
       </div>
 
