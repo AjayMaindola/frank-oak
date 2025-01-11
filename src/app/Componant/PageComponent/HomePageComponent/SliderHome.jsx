@@ -49,7 +49,7 @@ export default function SliderHome() {
 
   return (
     <>
-      <div className="max-w-[1320px] mx-auto h-[300px] md:h-[400px] mt-10  mb-[10px] md:mb-[60px]">
+      <div className="max-w-[1320px] mx-auto h-[300px] md:h-[400px] mt-10  mb-[15px] md:mb-[75px]">
         <div className="flex items-center justify-between px-[12px] py-6 relative">
           <div className="">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold font-Ysabeau">
