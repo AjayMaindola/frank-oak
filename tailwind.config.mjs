@@ -8,18 +8,7 @@ export default {
     flowbite.content(),
   ],
   theme: {
-    screens: {
-      'mobile': '320px',
-      'tablet': '640px',
-      // => @media (min-width: 640px) { ... }
-      'tabletMax': '767px',
-      'laptop': '1024px',
-      // => @media (min-width: 1024px) { ... }
-    
-      'desktop': '1280px',
-      // => @media (min-width: 1280px) { ... }
-      },
-     extend: {
+       extend: {
       backgroundImage: {
         'bannerTop': "url('/images/mainBanner/bannerTop.webp')",
         'MadeforGood':"url('/images/MadeforGoodLiving/hhhh.jpg')",
