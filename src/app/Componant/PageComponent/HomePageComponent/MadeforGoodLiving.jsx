@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function MadeforGoodLiving() {
   return (
     <>
-      <div className="w-full px-[10px] md:px-[10px] md:grid md:grid-cols-[50%_50%] mt-8 ">
+      <div className="w-full px-[10px] md:px-[10px] md:grid md:grid-cols-[50%_50%] mobile:mt-4 tablet:mt-5 tabletMax:mt-7 md:mt-8 ">
         <div className=" max-w-[1320px] mx-auto   ">
           <h1 className="font-bold text-[20px] text-center py-5  md:py-10 lg:py-14 mb-5  lg:text-start lg:px-6 lg:text-[25px] xl:px-14">
             Made for Good Living.
