@@ -5,7 +5,7 @@ export default function MadeforGoodLiving() {
     <>
       <div className="w-full px-[10px] md:px-[10px] md:grid md:grid-cols-[50%_50%] md:mt-8 ">
         <div className=" max-w-[1320px] mx-auto   ">
-          <h1 className="font-bold text-[20px] text-center py-4 mt-8  md:py-10 lg:py-14 mb-2 md:mb-5  lg:text-start lg:px-6 lg:text-[25px] xl:px-14">
+          <h1 className="font-bold text-[20px] text-center py-4 mt-[75px]  md:py-10 lg:py-14 mb-2 md:mb-5  lg:text-start lg:px-6 lg:text-[25px] xl:px-14">
             Made for Good Living.
           </h1>
           <p className=" md:py-5 lg:py-8 text-justify px-6 text-[16px] md:text-[18px] lg:text-[22px] xl:px-14 ">
