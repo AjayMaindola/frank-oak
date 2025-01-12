@@ -35,6 +35,7 @@ export default function SliderHome() {
             slidesToShow: 3,
             slidesToScroll: 1,
             dots: false,
+            arrows:false,
           }
         },
         {
