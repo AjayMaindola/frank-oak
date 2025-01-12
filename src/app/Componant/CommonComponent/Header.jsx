@@ -275,7 +275,7 @@ export default function Header() {
           <div
             onClick={() => setDrawerOpen(false)}
             className={` duration-500 transition-all  shadow-xl bg-white py-[1.2%] px-[2.5%] h-[100%] w-[100%] md:w-[54%] xl:w-[40%]  fixed right-0 top-0 ${
-              drawerOpen ? "" : "right-[-100%] md:right-[-54%] xl:right-[-40%]"
+              drawerOpen ? "" : "right-[-105%] md:right-[-54%] xl:right-[-40%]"
             }`}
           >
             <div className=" bg-white flex items-center gap-5">

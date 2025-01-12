@@ -108,11 +108,34 @@ export default function SliderHome() {
             </h1>
 
             <div
-              className={`w-full  bg-green-500 h-[305px] absolute left-0 top-[85px] ${
+              className={`w-[94%]   bg-white h-[200px] md:h-[305px] absolute left-[18px] pl-[10px] md:pl-[38px] top-[85px] ${
                 toggle === 2 ? "" : "hidden"
               } `}
             >
-              <h1 className={`text-5xl  text-center mt-12`}>hello men</h1>
+                <Slider {...settings}  >
+                <div className="h-[180px] md:h-[300px] " >
+                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={200} height={250} alt="gg"/></div>
+                   
+                </div>
+                <div className="h-[300px] " >
+                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={200} height={250} alt="gg"/></div>
+                   
+                </div>
+                <div className="h-[300px] " >
+                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={200} height={250} alt="gg"/></div>
+                   
+                </div>
+                <div className="h-[300px] " >
+                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={200} height={250} alt="gg"/></div>
+                   
+                </div>
+                <div className="h-[300px] " >
+                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={200} height={250} alt="gg"/></div>
+                   
+                </div>
+              
+             
+              </Slider>
             </div>
           </div>
         </div>
