@@ -68,7 +68,7 @@ export default function SliderHome() {
             {/* women-Div */}
 
             <div id="mySlider"
-              className={`w-[93%]   bg-slate-180 h-[200px] md:h-[305px] absolute left-[25px] pl-[0px] md:pl-[35px] top-[85px]   `} 
+              className={`w-[90%]   bg-slate-180 h-[200px] md:h-[305px] absolute left-[25px] pl-[0px] md:pl-[35px] top-[85px]   `} 
              
             >
               <Slider {...settings}  >
@@ -108,11 +108,11 @@ export default function SliderHome() {
             </h1>
 
             <div
-              className={`w-[94%]   bg-white h-[200px] md:h-[305px] absolute left-[18px] pl-[10px] md:pl-[38px] top-[85px] ${
+              className={`w-[92.5%]   h-[200px] md:h-[305px] absolute left-[18px] pl-0 md:pl-[38px] top-[85px] ${
                 toggle === 2 ? "" : "hidden"
               } `}
             >
-                <Slider {...settings}  >
+                <Slider {...settings} className="bg-white"  >
                 <div className="h-[180px] md:h-[300px] " >
                     <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={200} height={250} alt="gg"/></div>
                    
