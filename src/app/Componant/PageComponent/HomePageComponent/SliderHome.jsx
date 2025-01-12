@@ -13,6 +13,7 @@ export default function SliderHome() {
     dots: true,
     infinite: true,
     speed: 500,
+    centerMode: true,
     autoplay: true,
    
     autoplaySpeed: 1500,
@@ -41,7 +42,9 @@ export default function SliderHome() {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
+            centerMode: false,
             dots: false,
+            arrows:false,
           }
         }
         // You can unslick at a given breakpoint now by adding:
@@ -71,7 +74,7 @@ export default function SliderHome() {
             {/* women-Div */}
 
             <div id="mySlider"
-              className={`w-[100%]   bg-slate-180  absolute left-0 top-[200%] md:top-[120%] px-9 md:px-[6%]  `} 
+              className={`w-[100%]   bg-slate-180  absolute left-0 top-[200%] md:top-[120%] px-3 md:px-[6%]  `} 
              
             >
                  <Slider {...settings} className="bg-white px-[10px]"  >
@@ -111,7 +114,7 @@ export default function SliderHome() {
             </h1>
 
             <div
-              className={`w-[100%]   bg-slate-180  absolute left-0 top-[200%] md:top-[120%] px-9 md:px-[6%]  ${
+              className={`w-[100%]   bg-slate-180  absolute left-0 top-[200%] md:top-[120%] px-3 md:px-[6%]  ${
                 toggle === 2 ? "" : "hidden"
               } `}
             >
