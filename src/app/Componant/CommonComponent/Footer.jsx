@@ -6,7 +6,7 @@ import { CiInstagram } from "react-icons/ci";
 export default function Footer() {
   return (
     <>
- <div className="bg-black text-white  mt-5 w-[100%] pb-[60px] ">
+ <div className="bg-black text-white  mt-5 w-[100%] pb-[60px]   ">
  <div className=" max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-4 justify-between items-center gap-5 text-white  ">
         <div className="flex flex-col justify-center items-center mt-5">
           <Image

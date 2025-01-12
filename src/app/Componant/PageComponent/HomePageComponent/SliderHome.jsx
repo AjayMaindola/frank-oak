@@ -10,10 +10,11 @@ export default function SliderHome() {
     setToggle(id);
   }
   let settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     autoplay: true,
+   
     autoplaySpeed: 1500,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -24,7 +25,7 @@ export default function SliderHome() {
             slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
-            dots: false,
+            dots: true,
           }
         },
         {
@@ -32,13 +33,15 @@ export default function SliderHome() {
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
+            dots: false,
           }
         },
         {
           breakpoint: 480,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            dots: false,
           }
         }
         // You can unslick at a given breakpoint now by adding:
@@ -49,8 +52,8 @@ export default function SliderHome() {
 
   return (
     <>
-      <div className="max-w-[1320px] mx-auto h-[300px] md:h-[400px] mt-10  mb-20  md:mb-[70px] ">
-        <div className="flex items-center justify-between px-[12px] py-6 relative">
+      <div className="max-w-[1320px] mx-auto mt-[20px]  md:mt-10 pb-[200px] md:pb-[300px] lg:pb-[280px] xl:pb-[350px] ">
+        <div className="flex items-center justify-between px-[12px] md:py-6 relative">
           <div className="">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold font-Ysabeau">
               This Just In
@@ -68,28 +71,28 @@ export default function SliderHome() {
             {/* women-Div */}
 
             <div id="mySlider"
-              className={`w-[90%]   bg-slate-180 h-[200px] md:h-[305px] absolute left-[25px] pl-[0px] md:pl-[35px] top-[85px]   `} 
+              className={`w-[100%]   bg-slate-180  absolute left-0 top-[200%] md:top-[120%] px-9 md:px-[6%]  `} 
              
             >
-              <Slider {...settings}  >
-                <div className="h-[180px] md:h-[300px] " >
-                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={200} height={250} alt="gg"/></div>
+                 <Slider {...settings} className="bg-white px-[10px]"  >
+                <div className="h-[180px]  " >
+                    <div className="pr-[12px] w-[100%]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={252} height={10} alt="gg"/></div>
                    
                 </div>
-                <div className="h-[300px] " >
-                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={200} height={250} alt="gg"/></div>
+                <div className=" " >
+                    <div className="pr-[12px] w-[100%]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={252} height={10} alt="gg"/></div>
                    
                 </div>
-                <div className="h-[300px] " >
-                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={200} height={250} alt="gg"/></div>
+                <div className="" >
+                    <div className="pr-[12px] w-[100%]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={252} height={10} alt="gg"/></div>
                    
                 </div>
-                <div className="h-[300px] " >
-                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={200} height={250} alt="gg"/></div>
+                <div className=" " >
+                    <div className="pr-[12px] w-[100%]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={252} height={10} alt="gg"/></div>
                    
                 </div>
-                <div className="h-[300px] " >
-                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC2.webp" width={200} height={250} alt="gg"/></div>
+                <div className="" >
+                    <div className="pr-[12px] w-[100%]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={252} height={10} alt="gg"/></div>
                    
                 </div>
               
@@ -108,29 +111,29 @@ export default function SliderHome() {
             </h1>
 
             <div
-              className={`w-[92.5%]   h-[200px] md:h-[305px] absolute left-[18px] pl-0 md:pl-[38px] top-[85px] ${
+              className={`w-[100%]   bg-slate-180  absolute left-0 top-[200%] md:top-[120%] px-9 md:px-[6%]  ${
                 toggle === 2 ? "" : "hidden"
               } `}
             >
-                <Slider {...settings} className="bg-white"  >
-                <div className="h-[180px] md:h-[300px] " >
-                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={200} height={250} alt="gg"/></div>
+                <Slider {...settings} className="bg-white px-[10px]"  >
+                <div className="h-[180px]  " >
+                    <div className="pr-[12px] w-[100%]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={252} height={10} alt="gg"/></div>
                    
                 </div>
-                <div className="h-[300px] " >
-                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={200} height={250} alt="gg"/></div>
+                <div className=" " >
+                    <div className="pr-[12px] w-[100%]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={252} height={10} alt="gg"/></div>
                    
                 </div>
-                <div className="h-[300px] " >
-                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={200} height={250} alt="gg"/></div>
+                <div className="" >
+                    <div className="pr-[12px] w-[100%]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={252} height={10} alt="gg"/></div>
                    
                 </div>
-                <div className="h-[300px] " >
-                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={200} height={250} alt="gg"/></div>
+                <div className=" " >
+                    <div className="pr-[12px] w-[100%]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={252} height={10} alt="gg"/></div>
                    
                 </div>
-                <div className="h-[300px] " >
-                    <div className="mr-[5px]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={200} height={250} alt="gg"/></div>
+                <div className="" >
+                    <div className="pr-[12px] w-[100%]"> <Image  src="/images/FeaturedCategories/FC4.webp" width={252} height={10} alt="gg"/></div>
                    
                 </div>
               

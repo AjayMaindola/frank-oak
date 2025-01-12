@@ -10,11 +10,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 .slick-prev:before,
 .slick-next:before {
   font-family: slick;
@@ -24,8 +20,9 @@
   bottom: 10px;
   line-height: 1;
   opacity: 0.75;
-  color: #110101 !important;
+  right: -5px;
+  color: #f00c0c !important;
   border-radius: 50%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-} */
+}
