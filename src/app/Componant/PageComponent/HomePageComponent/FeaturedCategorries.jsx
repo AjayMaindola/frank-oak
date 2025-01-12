@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function FeaturedCategorries() {
   return (
     <>
-    <div className='w-full'>
+    <div className='w-full '>
     <div className='max-w-[1320px] mx-auto '>
     <h1 className=" pt-[10px] px-[20px] text-center md:text-start text-[25px] lg:text-[32px]">Featured Categories</h1>
     </div>
